@@ -1,0 +1,8 @@
+**Status:** Aceito
+**Contexto:** O sistema precisa permitir o registro de certificados para armazenar suas informações de forma organizada e acessível. Sem uma funcionalidade específica para esse processo, o controle dos certificados pode se tornar desorganizado, dificultando sua consulta e gerenciamento. Portanto, é necessário implementar um mecanismo de registro que garanta o armazenamento adequado e a integridade das informações.
+**Decisão:** Implementar uma funcionalidade de cadastro de certificados que permita inserir e armazenar suas informações no sistema. Essa solução facilitará a organização, a consulta e o gerenciamento dos certificados registrados.
+**Alternativas consideradas:**
+- {alternativa}: a alternativa foi emitir os certificados, mas desistimos. A consequência é que emitir certificados significaria resolver um outro problema e a padronização desses certificados em empresas pequenas talvez não agregue muito valor à certificação. 
+**Consequências:**
+- Positivas: Centralizar o armazenamento dos certificados, facilitar a consulta das informações registradas e reduzir a necessidade de controles manuais. A funcionalidade poderá ser verificada por meio de testes de cadastro e consulta dos certificados armazenados.
+- Negativas: O desenvolvimento da funcionalidade exige tempo para implementação e testes, além da definição dos campos necessários para cada certificado. Também será necessário validar os dados inseridos e tratar possíveis erros durante o armazenamento, aumentando a complexidade do sistema.
