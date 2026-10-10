@@ -1,8 +1,0 @@
-**Status:** Aceita
-**Contexto:** O sistema precisa garantir que apenas usuários autorizados possam registrar certificados, evitando alterações ou registros realizados por pessoas sem permissão. Sem um mecanismo de autenticação e controle de acesso, existe o risco de inserção de certificados falsos ou não autorizados. Portanto, é necessário implementar um processo de autenticação de usuários e restrições de acesso para garantir a segurança e a confiabilidade dos registros de certificados.
-**Decisão:** Implementar um sistema de autenticação de usuários com controle de permissões, permitindo que apenas usuários autenticados e autorizados possam registrar certificados. Essa medida visa garantir a segurança, a integridade e a confiabilidade dos registros realizados no sistema.
-**Alternativas consideradas:**
-- {alternativa}: a alternativa foi de autenticar documentos, além de somente certificados, mas desistimos. A consequência é que somente certificados serão autenticados, porque nosso objetivo é validar certificados e seria uma outra vertente validar outros documentos, como o de identidade.
-**Consequências:**
-- Positivas: Aumentar a segurança do sistema, permitindo que somente usuários autenticados e autorizados registrem certificados. Reduzir o risco de registros indevidos e possibilitar a verificação da identidade dos usuários antes de liberar o acesso à funcionalidade de registro.
-- Negativas: A implementação da autenticação e do controle de permissões aumenta a complexidade do sistema e exige tempo adicional de desenvolvimento e testes. Além disso, será necessário gerenciar as contas dos usuários, tratar possíveis falhas de autenticação e garantir a manutenção das regras de acesso.
